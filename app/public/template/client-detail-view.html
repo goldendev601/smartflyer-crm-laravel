@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Client Detail View</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard d-flex flex-wrap">
+        <div class="dashboard-left-menu">
+            <div class="logo">
+                <img src="images/white-logo.png">
+            </div>
+            <div class="dashboard-menu">
+             <ul class="mainmenu">
+                <li class="active"><a href="#"><img src="images/home.png"> Home</a></li>
+                <li><a href="#"><img src="images/Clients.png"> Clients</a>
+                    <a class=" child-open"><span></span></a>
+                    <ul style="display: block;">
+                        <li><a href="all-clients.html">All clients</a></li>
+                        <li><a href="upcoming-trips.html">Upcoming trips</a></li>
+                        <li><a href="#">Calendar</a></li>
+                    </ul>
+                </li>
+                <li><a href="trips.html"><img src="images/Trips.png"> Trips</a></li>
+                <li><a href="#"><img src="images/Partners.png"> Partners</a>
+                    <ul> 
+                        <li><a href="#">All clients</a></li>
+                        <li><a href="clients-upcoming-trips.html">Upcoming trips</a></li>
+                        <li><a href="#">Calendar</a>
+                            <ul> 
+                                <li><a href="#">All clients</a>
+                                    <ul> 
+                                        <li><a href="#">All clients</a></li>
+                                        <li><a href="#">Upcoming trips</a></li>
+                                        <li><a href="#">Calendar</a></li>
+                                    </ul> </li>
+                                    <li><a href="#">Upcoming trips</a>
+                                        <ul> 
+                                            <li><a href="#">All clients</a></li>
+                                            <li><a href="#">Upcoming trips</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                        </ul>   
+                                    </li>
+                                    <li><a href="#">Calendar</a>
+                                        <ul> 
+                                            <li><a href="#">All clients</a></li>
+                                            <li><a href="#">Upcoming trips</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                        </ul> 
+                                    </li>
+                                </ul>   
+                            </li>
+                            <li><a href="#">Link 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/To-do.png"> To-do</a></li>
+                    <li><a href="#"><img src="images/Agents.png"> Agents</a></li>
+                    <li><a href="#"><img src="images/Settings.png"> Settings</a></li>
+                </ul>
+            </div>
+            <div class="dashboard-menu-sidebar">
+                <div class="inner d-flex flex-wrap">
+                    <div class="image">
+                        <img src="images/clients-2.png">
+                    </div>
+                    <div class="content white">
+                        <h3>Martin Doe</h3>
+                        <a href="mailto:martindoe@gmail.com">martindoe@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-details dashboard-header padding-spacing ">
+            <div class="d-flex flex-wrap justify-content-space-between client-detail-view-header">
+                <div class="breadcrumbs">
+                    <ul class=" d-flex flex-wrap">
+                        <li><a href="all-clients.html">Clients</a></li>
+                        <li>Martin Doe</li>
+                    </ul>
+                </div>
+                <div class="trip-view-header d-flex flex-wrap justify-content-space-between align-items-center ">
+                    <ul class="d-flex flex-wrap justify-content-flex-end m-600">
+                        <li class="client-detail-view-icon chat-icon"><a href="#"><img src="images/chat.png"></a></li>
+                        <li class="client-detail-view-icon share-icon">
+                            <a href="#" class="share-icon-wrap"><img src="images/share.png" ></a>
+                            <div class="share-popup" id="share-popup">
+                                <ul>
+                                    <li>
+                                        <a href="#" >
+                                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                                            <h5>Share via email</h5>
+                                        </a>
+                                       
+                                    </li>
+                                    <li>
+                                        <a data-fancybox href="#Share-via-email">
+                                            <i class="bi bi-link-45deg"></i>
+                                            <h5>Share public link</h5>
+                                        </a>
+                                        <div id="Share-via-email" class="add-client-model Share-via-email" style="display: none;">
+                                            <div class="add-client-form">
+                                                <div class="title-wrap">
+                                                <h1>Share public link</h1>
+                                                <span>Martin Doe</span>
+                                            </div>
+                                                <form>
+                                                   <ul>
+                                                      <li>
+                                                         <label for="uname"><b>Link</b></label>
+                                                         <input type="url" placeholder="crm.smartflyer.com/clients/martin-doe" name="Link" required="">
+                                                      </li>
+                                                      <li>
+                                                         <label for="Password"><b>Password for link</b></label>
+                                                         <input type="password" placeholder="123DA123" name="Password" required="">
+                                                      </li>
+                                                   </ul>
+                                                   <div class="form-btn">
+                                                      <input type="submit" value="Cancel">
+                                                      <input type="submit" value="Save changes">
+                                                   </div>
+                                                </form>
+                                             </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="client-detail-view-icon list-icon">
+                            <a href="#trip-details-wrap" data-fancybox class="list-icon-wrap">
+                                <img src="images/list.png">
+                            </a>
+                            <div class="trip-details-tasks white" id="trip-details-wrap" style="display: none;">
+                                <h1>Here is what’s pending</h1>
+                                <div class="received-date">
+                                    
+                                </div>
+                                <div class="multigraph">
+                                    <div class="multigraph-content">
+                                        <div class="multigraph-width">
+                                            <span>Your progress</span>
+                                            <p>890,344 Sales</p>
+                                        </div>
+                                        <div class="content">Keep up the good job, you are among the top 1% of sellers</div>
+                                    </div>
+                                    <span class="graph-div"></span>
+                                </div>
+                                <div class="dashboard-right">
+                                    <div class="trip-details-header d-flex flex-wrap align-items-center">
+                                        <h2>To-do this week</h2>
+                                        <a href="#">Add task</a>
+                                    </div>
+                                    <div class="dashboard-right-wrap">
+                                        <div class="summary-wrap">
+                                            <div class="week-summary">
+                                                <div class="week-summary-in">
+                                                    <div class="summary-wrap">
+                                                        <input type="checkbox" checked="checked">
+                                                        <label> Complete information for trip</label>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                </div>
+                                                <div class="due-date"><a href="#">Due monday</a></div>
+                                            </div>
+                                            <div class="week-summary">
+                                                <div class="week-summary-in">
+                                                    <div class="summary-wrap">
+                                                        <input type="checkbox" checked="checked">
+                                                        <label>Submit proposals for new clients</label>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                </div>
+                                                <div class="due-date"><a href="#">Due monday</a></div>
+                                            </div>
+                                            <div class="week-summary">
+                                                <div class="week-summary-in">
+                                                    <div class="summary-wrap">
+                                                        <input type="checkbox" checked="checked">
+                                                        <label>Review revenue numbers for March</label>
+                                                    </div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                </div>
+                                                <div class="due-date"><a href="#">Due monday</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">New Trip</a></li>
+                        <li><a href="#download" data-fancybox>Download...</a>
+                            <div class="download edit-popup" id="download" style="display: none;">
+                                <div class="title-wrap">
+                                    <h1>Download as...</h1>
+                                </div>
+                                <div class="download-option">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <div class="image">
+                                                    <img src="images/pdf-blue.png" class="blue-image">
+                                                    <img src="images/pdf-white.png" class="white-image">
+                                               </div>
+                                                <span>PDF</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <div class="image">
+                                                    <img src="images/csv-blue.png" class="blue-image">
+                                                    <img src="images/csv-white.png" class="white-image">
+                                                </div>
+                                                <span>CSV</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:void(0);">
+                                                <div class="image">
+                                                    <img src="images/spreadsheet-blue.png" class="blue-image">
+                                                    <img src="images/spreadsheet-white.png" class="white-image">
+                                                </div>
+                                                <span>SPREADSHEET</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="include form-section">
+                                    <ul>
+                                        <li class="width-100">
+                                            <label>Include</label>
+                                            <div class="switch-documentation">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked="">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <div>Dates & Numbers</div>
+                                            </div>
+                                        </li>
+                                         <li class="checkbox">
+                                            <div class="form-group">
+                                                  <input type="checkbox" id="Important-dates">
+                                                  <label for="Important-dates">Important dates</label>
+                                            </div>
+                                            <div class="form-group">
+                                                  <input type="checkbox" id="Important-Numbers">
+                                                  <label for="Important-Numbers">Important Numbers</label>
+                                            </div>
+                                        </li>
+                                        <li class="width-100 related-contacts">
+                                            <div class="switch-documentation">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked="">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <div>Related contacts</div>
+                                            </div>
+                                        </li>
+                                        <li class="width-100">
+                                            <div class="switch-documentation">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked="">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <div>Dates & Numbers</div>
+                                            </div>
+                                        </li>
+                                        <li class=checkbox>
+                                            <div class="form-group">
+                                                  <input type="checkbox" id="Allergies">
+                                                  <label for="Allergies">Allergies</label>
+                                            </div>
+                                            <div class="form-group">
+                                                  <input type="checkbox" id="Food preferences">
+                                                  <label for="Food preferences">Food preferences</label>
+                                            </div>
+                                            <div class="form-group">
+                                                  <input type="checkbox" id="Likes">
+                                                  <label for="Likes">Likes</label>
+                                            </div>
+                                            <div class="form-group">
+                                                  <input type="checkbox" id="Dislikes">
+                                                  <label for="Dislikes">Dislikes</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="add-client-form">
+                                    <form>
+                                        <div class="form-btn">
+                                          <input type="submit" value="Cancel">
+                                          <input type="submit" value="Save changes">
+                                       </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#edit-popup" data-fancybox>Edit</a>
+                            <div class="edit-popup " id="edit-popup" style="display: none;">
+                               <div class="title-wrap">
+                                    <h1>Edit Client</h1>
+                                    <span>Martin Doe</span>
+                                </div>
+                                <ul class="tabs">
+                                      <li class="active" rel="tab7">Main</li>
+                                      <li rel="tab8">Dates</li>
+                                      <li rel="tab9">Numbers</li>
+                                      <li rel="tab10">Notes</li>
+                                      <li rel="tab11">Food & Allergies</li>
+                                      <li rel="tab12">Likes/dislikes</li>
+                                </ul>
+                                <div class="tab_container">
+                                      <div id="tab7" class="tab_content">
+                                            <h4>Main Information</h4>
+                                            <div class="add-client-form">
+                                                <form>
+                                                    <ul>
+                                                        <li>
+                                                            <label for="uname"><b>Name</b></label>
+                                                            <input type="text" placeholder="Enter name" name="uname" required="">
+                                                        </li>
+                                                        <li>
+                                                            <label for="uname"><b>Email</b></label>
+                                                            <input type="text" placeholder="Enter email" name="uname" required="">
+                                                        </li>
+                                                        <li>
+                                                            <label for="uname"><b>Phone number</b></label>
+                                                            <input type="number" placeholder="+1 (212) 222-1234" name="uname" required="">
+                                                        </li>
+                                                        <li>
+                                                            <label for="uname"><b>Birthday</b></label>
+                                                            <div class="birthday-dropdown">
+                                                                <div class="month">
+                                                                    <select class="form-select select2 ">
+                                                                        <option>January</option>
+                                                                        <option>February</option>
+                                                                        <option>March</option>
+                                                                        <option>April</option>
+                                                                        <option>May</option>
+                                                                        <option>June</option>
+                                                                        <option>July</option>
+                                                                        <option>August</option>
+                                                                        <option>September</option>
+                                                                        <option>October</option>
+                                                                        <option>November</option>
+                                                                        <option>December</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="date">
+                                                                    <select class="form-select select2 ">
+                                                                        <option>1</option>
+                                                                        <option>2</option>
+                                                                        <option>3</option>
+                                                                        <option>4</option>
+                                                                        <option>5</option>
+                                                                        <option>6</option>
+                                                                        <option>7</option>
+                                                                        <option>8</option>
+                                                                        <option>9</option>
+                                                                        <option>10</option>
+                                                                        <option>11</option>
+                                                                        <option>12</option>
+                                                                        <option>13</option>
+                                                                        <option>14</option>
+                                                                        <option>15</option>
+                                                                        <option>16</option>
+                                                                        <option>17</option>
+                                                                        <option>18</option>
+                                                                        <option>19</option>
+                                                                        <option>20</option>
+                                                                        <option>21</option>
+                                                                        <option>22</option>
+                                                                        <option>23</option>
+                                                                        <option>24</option>
+                                                                        <option>25</option>
+                                                                        <option>26</option>
+                                                                        <option>27</option>
+                                                                        <option>28</option>
+                                                                        <option>29</option>
+                                                                        <option>30</option>
+                                                                        <option>31</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="year">
+                                                                    <select class="form-select select2 ">
+                                                                        <option>1988</option>
+                                                                        <option>1989</option>
+                                                                        <option>1990</option>
+                                                                        <option>1991</option>
+                                                                        <option>1992</option>
+                                                                        <option>1993</option>
+                                                                        <option>1994</option>
+                                                                        <option>1994</option>
+                                                                        <option>1995</option>
+                                                                        <option>1996</option>
+                                                                        <option>1997</option>
+                                                                        <option>1998</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="form-btn">
+                                                       <input type="submit" value="Cancel">
+                                                       <input type="submit" value="Invite">
+                                                   </div>
+                                               </form>
+                                            </div>
+                                      </div>
+                                      <div id="tab8" class="tab_content">
+                                          <h2>Tab 2 content</h2>
+                                          <p>Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend vestibulum odio non vulputate.</p>
+                                      </div>
+                                      <div id="tab9" class="tab_content">
+                                          <h2>Tab 3 content</h2>
+                                          <p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit. Pellentesque sem lorem, scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
+                                      </div>
+                                      <div id="tab10" class="tab_content">
+                                          <h2>Tab 4 content</h2>
+                                          <p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
+                                      </div>
+                                      <div id="tab11" class="tab_content">
+                                          <h2>Tab 4 content</h2>
+                                          <p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
+                                      </div>
+                                      <div id="tab12" class="tab_content">
+                                          <h2>Tab 4 content</h2>
+                                          <p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing mauris justo nec eros.</p>
+                                      </div>
+                                </div>
+                            </div>
+                       </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="client-details d-flex flex-wrap">
+                <div class="client-details-name d-flex flex-wrap align-items-center">
+                    <div class="client-img">
+                        <img src="images/Martin-Doe.png">
+                    </div>
+                    <div class="content">
+                        <h1>Martin Doe</h1>
+                        <ul>
+                            <li class="black"><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black"> +1 (212) 855 1234</a></li>
+                            <li class="black"><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="dashboard-chart d-flex flex-wrap all-clients-card">
+                    <div class="dashboard-chart-wrap col-6">
+                        <div class="inner box-hover">
+                            <figure>
+                                <img src="images/Revenue.png">
+                            </figure>
+                            <h6>Revenue</h6>
+                            <div class="chart-details d-flex flex-wrap align-items-center justify-content-flex-start">
+                                <h2>$5,209</h2>
+                                <div class="chart-percentage">
+                                    <h5>27% <img src="images/chart-up.png"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-chart-wrap col-6">
+                        <div class="inner box-hover">
+                            <figure>
+                                <img src="images/Equalizer.png">
+                            </figure>
+                            <h6>Milestone Reached</h6>
+                            <div class="chart-details d-flex flex-wrap align-items-center justify-content-flex-start">
+                                <h2>$50,000</h2>
+                                <div class="chart-percentage down-graph">
+                                    <h5>14% <img src="images/chart-down.png"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clients-tab-section">
+                <div class="clients-tab d-flex flex-wrap justify-content-space-between">
+                    <ul class="tabs d-flex flex-wrap">
+                        <li class="active" rel="tab1"><span>Main</span></li>
+                        <li rel="tab2"><span>Dates & Numbers</span></li>
+                        <li rel="tab3"><span>Related contacts </span></li>
+                        <li rel="tab4"><span>Food & Allergies</span></li>
+                        <li rel="tab5"><span>Notes</span></li>
+                        <li rel="tab6"><span>Marketing</span></li>
+                    </ul>
+                </div>
+                <div class="tab_container">
+                    <div id="tab1" class="tab_content">
+                        <div class="d-flex flex-wrap destinations-trip">
+                            <div class="upcoming-trips common-background col-6 ">
+                                <div class="inner">
+                                    <div class="title  d-flex flex-wrap">
+                                        <h3 class="m-600">Trips</h3>
+                                        <div><a href="#" class="trip blue-oblivion-color m-600"> Add trip<i class="fa fa-plus" aria-hidden="true"></i></a></div>
+                                    </div>
+                                    <div class="upcoming-trips-details">
+                                        <div class="inner">
+                                            <ul>
+                                                <li class="m-600"><h3 class="m-600 black">Summer in Italy</h3>Amalfi Coast</li>
+                                                <li>July 17 to August 1 </li>
+                                                <li><div class="btn"><a href="#" class="m-600">Upcoming</a></div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="inner">
+                                            <ul>
+                                                <li class="m-600"><h3 class="m-600 black">Europe 2022</h3>France, Portugal, Spain</li>
+                                                <li>July 17 to August 1 </li>
+                                                <li><div class="btn"><a href="#" class="m-600">Upcoming</a></div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="inner">
+                                            <ul>
+                                                <li class="m-600"><h3 class="m-600 black">Europe 2022</h3>France, Portugal, Spain</li>
+                                                <li>July 17 to August 1 </li>
+                                                <li><div class="btn"><a href="#" class="m-600">Upcoming</a></div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="inner">
+                                            <ul>
+                                                <li class="m-600"><h3 class="m-600 black">Europe 2022</h3>France, Portugal, Spain</li>
+                                                <li>July 17 to August 1 </li>
+                                                <li><div class="btn"><a href="#" class="m-600">Upcoming</a></div></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="view-all justify-content-flex-end flex-wrap d-flex"><a href="#" class="blue-oblivion-color m-600">View all upcoming trips <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="common-background favorite-destinations col-6">
+                                <h2>Favorite destinations</h2>
+                                <div class="favorite-destinations-wrap">
+                                    <div class="favorite-destinations-inner">
+                                        <div class="inner d-flex flex-wrap">
+                                            <div class="destinations-img">
+                                                <img src="images/destinations-1.png">
+                                            </div>
+                                            <div class="destinations-content">
+                                                <h3>France</h3>
+                                                <span>Ramatuelle, France</span>
+                                                <span>10 Trips in the last Month</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="favorite-destinations-inner">
+                                        <div class="inner d-flex flex-wrap">
+                                            <div class="destinations-img">
+                                                <img src="images/destinations-4.png">
+                                            </div>
+                                            <div class="destinations-content">
+                                                <h3>Palm Springs</h3>
+                                                <span>Palm Springs, California</span>
+                                                <span>10 Trips in the last Month</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="favorite-destinations-inner">
+                                        <div class="inner d-flex flex-wrap">
+                                            <div class="destinations-img">
+                                                <img src="images/destinations-3.png">
+                                            </div>
+                                            <div class="destinations-content">
+                                                <h3>Italy</h3>
+                                                <span>Capri, Italy</span>
+                                                <span>7 Trips in the last Month</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="favorite-destinations-inner">
+                                        <div class="inner d-flex flex-wrap">
+                                            <div class="destinations-img">
+                                                <img src="images/destinations-4.png">
+                                            </div>
+                                            <div class="destinations-content">
+                                                <h3>Bahamas</h3>
+                                                <span>Bahamas</span>
+                                                <span>6 Trips in the last Month</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab_content">
+                        <div class="important-date-wrap">
+                            <div class="important-date-main-wrap d-flex flex-wrap destinations-trip">
+                                <div class="important-date common-background margin-col-6 ">
+                                    <div class="title d-flex flex-wrap">
+                                        <h4 class="m-600">Important dates</h4>
+                                        <div>
+                                            <a href="#important-dates" class="trip blue-oblivion-color m-600" data-fancybox> Add trip<i class="fa fa-plus" aria-hidden="true"></i></a>
+                                            <div class="edit-popup fancybox-content important-dates" id="important-dates" style="display: none;">
+                                                <div class="title-wrap">
+                                                  <h1>Add new date</h1>
+                                                  <span>Martin Doe</span>
+                                                </div>
+                                                <div class="add-client-form">
+                                                    <form>
+                                                       <ul>
+                                                          <li>
+                                                             <label for="uname"><b>Name/Event</b></label>
+                                                             <input type="text" placeholder="Enter name" name="uname" required="">
+                                                          </li>
+                                                          <li class="frequency-section">
+                                                            <label for="uname"><b>Frequency</b></label>
+                                                            <select class="form-select">
+                                                                  <option>Select</option>
+                                                                  <option>January</option>
+                                                                  <option>February</option>
+                                                                  <option>March</option>
+                                                                  <option>April</option>
+                                                                  <option>May</option>
+                                                                  <option>June</option>
+                                                                  <option>July</option>
+                                                                  <option>August</option>
+                                                                  <option>September</option>
+                                                                  <option>October</option>
+                                                                  <option>November</option>
+                                                                  <option>December</option>
+                                                               </select>
+                                                            </li>
+                                                            <li class="date-section">
+                                                             <label for="uname"><b>Date</b></label>
+                                                             <div class="birthday-dropdown">
+                                                                <div class="month">
+                                                                   <select class="form-select">
+                                                                      <option>Month</option>
+                                                                      <option>January</option>
+                                                                      <option>February</option>
+                                                                      <option>March</option>
+                                                                      <option>April</option>
+                                                                      <option>May</option>
+                                                                      <option>June</option>
+                                                                      <option>July</option>
+                                                                      <option>August</option>
+                                                                      <option>September</option>
+                                                                      <option>October</option>
+                                                                      <option>November</option>
+                                                                      <option>December</option>
+                                                                   </select>
+                                                                </div>
+                                                                <div class="date">
+                                                                   <select class="form-select">
+                                                                      <option>Day</option>
+                                                                      <option>1</option>
+                                                                      <option>2</option>
+                                                                      <option>3</option>
+                                                                      <option>4</option>
+                                                                      <option>5</option>
+                                                                      <option>6</option>
+                                                                      <option>7</option>
+                                                                      <option>8</option>
+                                                                      <option>9</option>
+                                                                      <option>10</option>
+                                                                      <option>11</option>
+                                                                      <option>12</option>
+                                                                      <option>13</option>
+                                                                      <option>14</option>
+                                                                      <option>15</option>
+                                                                      <option>16</option>
+                                                                      <option>17</option>
+                                                                      <option>18</option>
+                                                                      <option>19</option>
+                                                                      <option>20</option>
+                                                                      <option>21</option>
+                                                                      <option>22</option>
+                                                                      <option>23</option>
+                                                                      <option>24</option>
+                                                                      <option>25</option>
+                                                                      <option>26</option>
+                                                                      <option>27</option>
+                                                                      <option>28</option>
+                                                                      <option>29</option>
+                                                                      <option>30</option>
+                                                                      <option>31</option>
+                                                                   </select>
+                                                                </div>
+                                                                <div class="year">
+                                                                   <select class="form-select">
+                                                                      <option>Year</option>
+                                                                      <option>1988</option>
+                                                                      <option>1989</option>
+                                                                      <option>1990</option>
+                                                                      <option>1991</option>
+                                                                      <option>1992</option>
+                                                                      <option>1993</option>
+                                                                      <option>1994</option>
+                                                                      <option>1994</option>
+                                                                      <option>1995</option>
+                                                                      <option>1996</option>
+                                                                      <option>1997</option>
+                                                                      <option>1998</option>
+                                                                   </select>
+                                                                </div>
+                                                             </div>
+                                                          </li>
+                                                       </ul>
+                                                       <div class="form-btn">
+                                                          <input type="submit" value="Cancel">
+                                                          <input type="submit" value="Save changes">
+                                                       </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="important-dates">
+                                        <ul class="d-flex flex-wrap">
+                                            <li class="date"><strong>July 1</strong></li>
+                                            <li><i class="fa fa-birthday-cake" aria-hidden="true"></i> Birthday</li>
+                                        </ul>
+                                        <ul  class="d-flex flex-wrap">
+                                            <li class="date"><strong>July 1</strong></li>
+                                            <li><i class="fa fa-gift" aria-hidden="true"></i> Anniversary</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="important-date common-background margin-col-6 ">
+                                    <div class="title d-flex flex-wrap">
+                                        <h4 class="m-600">Important numbers</h4>
+                                        <div>
+                                            <a href="#important-number" class="trip blue-oblivion-color m-600" data-fancybox> Add trip<i class="fa fa-plus" aria-hidden="true"></i></a>
+                                            <div class="edit-popup fancybox-content important-dates" id="important-number" style="display: none;">
+                                                <div class="title-wrap">
+                                                  <h1>Add important number</h1>
+                                                  <span>Martin Doe</span>
+                                                </div>
+                                                <div class="add-client-form">
+                                                    <form>
+                                                        <ul>
+                                                            <li class="frequency-section">
+                                                                <label for="uname"><b>Type</b></label>
+                                                                <select class="form-select">
+                                                                      <option>Select</option>
+                                                                      <option>January</option>
+                                                                      <option>February</option>
+                                                                      <option>March</option>
+                                                                      <option>April</option>
+                                                                      <option>May</option>
+                                                                      <option>June</option>
+                                                                      <option>July</option>
+                                                                      <option>August</option>
+                                                                      <option>September</option>
+                                                                      <option>October</option>
+                                                                      <option>November</option>
+                                                                      <option>December</option>
+                                                               </select>
+                                                            </li>
+                                                            <li>
+                                                                <label for="number"><b>Enter number</b></label>
+                                                                <input type="number" name="number" placeholder="Enter number">
+                                                            </li>
+                                                        </ul>
+                                                        <div class="form-btn">
+                                                          <input type="submit" value="Cancel">
+                                                          <input type="submit" value="Save changes">
+                                                       </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="important-numbers">
+                                        <div class="inner d-flex flex-wrap align-items-center">
+                                            <div class="image">
+                                                <img src="images/important-numbers-logo.png">
+                                            </div>
+                                            <div class="title">
+                                                <h5>Marriot Bonvoy Rewards</h5>
+                                            </div>
+                                            <div class="number"><a href="#"><strong> #123aasdd</strong> <img src="images/emp-number.png"></a> </div>
+                                        </div>
+                                        <div class="inner d-flex flex-wrap align-items-center">
+                                            <div class="image">
+                                                <img src="images/important-numbers-logo-2.png">
+                                            </div>
+                                            <div class="title">
+                                                <h5>Passport number</h5>
+                                            </div>
+                                            <div class="number"><a href="#"><strong>AA245699</strong><img src="images/emp-number.png"></a> </div>
+                                        </div>
+                                        <div class="inner d-flex flex-wrap align-items-center">
+                                            <div class="image">
+                                                <img src="images/important-numbers-logo-3.png">
+                                            </div>
+                                            <div class="title">
+                                                <h5>Marriot Bonvoy Rewards</h5>
+                                            </div>
+                                            <div class="number"><a href="#"><strong>AA245699</strong><img src="images/emp-number.png"></a> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="full-imp-date common-background col-12">
+                                    <div class="title d-flex flex-wrap">
+                                        <h4 class="m-600">Important numbers</h4>
+                                        <div><a href="#" class="trip blue-oblivion-color m-600">Upload new document<i class="fa fa-plus" aria-hidden="true"></i></a></div>
+                                    </div>
+                                    <div class="full-imp-date-inner ">
+                                        <ul>
+                                            <li><a href="#"><span>PDF</span>Passport.pdf</a></li>
+                                            <li><a href="#"><span>PDF</span>vaccinationcard.pdf</a></li>
+                                        </ul>   
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab_content">
+                        <div class=" d-flex flex-wrap destinations-trip">
+                            <div class="related-contacts common-background full-width">
+                                <div class="title d-flex flex-wrap">
+                                    <h4 class="m-600">Related contacts</h4>
+                                    <div><a href="#" class="trip blue-oblivion-color m-600">Add related contact<i class="fa fa-plus" aria-hidden="true"></i></a></div>
+                                </div>
+                                <div class="related-contacts-details">
+                                    <table>
+                                        <tr>
+                                            <td><img src="images/Martin-Doe.png"><strong>Maria Star</strong></td>
+                                            <td><img src="images/@.png"> maria88@gmail.com</td>
+                                            <td>Dec 12, 1988</td>
+                                            <td>Spouse/Wife</td>
+                                            <td><i class="fa fa-phone" aria-hidden="true"></i> +1(212) 234-1234</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="images/Martin-Doe.png"><strong>James Doe</strong></td>
+                                            <td>N/A</td>
+                                            <td>Dec 12, 2004</td>
+                                            <td>Son</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="images/Martin-Doe.png"><strong>Sarah Doe</strong></td>
+                                            <td>N/A</td>
+                                            <td>Dec 12, 2005</td>
+                                            <td>Daughter</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab4" class="tab_content">
+                        <div class="food-allergies d-flex flex-wrap destinations-trip">
+                            <div class="common-background margin-col-6 ">
+                                <div class="title d-flex flex-wrap">
+                                    <h4 class="m-600">Food and allergies</h4>
+                                </div>
+                                <div class="allergies-text">
+                                    <h3>Allergies</h3>
+                                    <div class="allergies-wrap d-flex flex-wrap dark-red-color">
+                                        <div class="inner " >
+                                            <a href="#" class="d-flex flex-wrap align-items-center">
+                                                <img src="images/Pollen.png"> Pollen
+                                            </a>
+                                        </div>
+                                        <div class="inner">
+                                            <a href="#" class="d-flex flex-wrap align-items-center">
+                                                <img src="images/Peanuts.png"> Peanuts
+                                            </a>
+                                        </div>
+                                        <div class="inner ">
+                                            <a href="#" class="d-flex flex-wrap align-items-center">
+                                                <img src="images/Fish.png"> Fish
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="allergies-text">
+                                    <h3>Food preferences</h3>
+                                    <div class="allergies-wrap d-flex flex-wrap light-blue-color">
+                                        <div class="inner " >
+                                            <a href="#" class="d-flex flex-wrap align-items-center">
+                                                <img src="images/Kosher.png"> Kosher
+                                            </a>
+                                        </div>
+                                        <div class="inner">
+                                            <a href="#" class="d-flex flex-wrap align-items-center">
+                                                <img src="images/Gluten-Free.png"> Gluten Free
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p></div>
+                            </div>
+                            <div class="common-background margin-col-6 left-side">
+                                <div class="title d-flex flex-wrap">
+                                    <h4 class="m-600">Preferences</h4>
+                                </div>
+                                <div class="allergies-text">
+                                    <h3>Allergies</h3>
+                                     <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p></div>
+                                </div>
+                                <div class="allergies-text">
+                                    <h3>Dislikes</h3>
+                                     <div class="content"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab5" class="tab_content">
+                        <div class="food-allergies notes d-flex flex-wrap destinations-trip">
+                            <div class="common-background margin-col-6 left-side">
+                                <div class="title d-flex flex-wrap">
+                                    <h4 class="m-600">Notes</h4>
+                                </div>
+                                <div class="allergies-text">
+                                     <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</div>
+                                </div>
+                            </div>
+                            <div class="common-background margin-col-6 left-side">
+                                <div class="title ">
+                                    <h4 class="m-600">Recent Activities</h4>
+                                    <span>890,344 Sales</span>
+                                </div>
+                                <div class="recent-activities">
+                                    <div class="recent-activities-wrap">
+                                        <div class="inner">
+                                            <div class="date-time">11/02</div>
+                                            <div class="dots"></div>
+                                            <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="date-time">11/02</div>
+                                            <div class="dots"></div>
+                                            <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="date-time">11/02</div>
+                                            <div class="dots"></div>
+                                            <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="date-time">11/02</div>
+                                            <div class="dots"></div>
+                                            <div class="content">Outlines keep you honest. Indulging in poorly driving and keep structure</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab6" class="tab_content">
+                        <div class="marketing d-flex flex-wrap destinations-trip">
+                            <div class="marketing-left d-flex flex-wrap">
+                                <div class="common-background">
+                                    <div class="title d-flex flex-wrap">
+                                        <h4 class="m-600">Marketing opt in</h4>
+                                    </div>
+                                    <div class="width-100 documents-signed">
+                                        <div class="switch-documentation">
+                                            <div>Newsletter</div>
+                                            <label class="switch">
+                                                <input type="checkbox" checked="">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            
+                                        </div>
+                                        <div class="switch-documentation">
+                                            <div>Travel alerts</div>
+                                            <label class="switch">
+                                                <input type="checkbox" checked="">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            
+                                        </div>
+                                        <div class="switch-documentation">
+                                             <div>Account updates</div>
+                                            <label class="switch">
+                                                <input type="checkbox" checked="">
+                                                <span class="slider round"></span>
+                                            </label>
+                                           
+                                        </div>
+                                        <div class="switch-documentation">
+                                            <div>Promotions</div>
+                                            <label class="switch">
+                                                <input type="checkbox" checked="">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="common-background automations-content">
+                                    <div class="title d-flex flex-wrap">
+                                        <h4 class="m-600">Automations</h4>
+                                    </div>
+                                    <div class="width-100 documents-signed">
+                                        <div class="switch-documentation">
+                                            <div>Automation 3</div>
+                                            <a href="#">Active</a>
+                                        </div>
+                                        <div class="switch-documentation">
+                                            <div>Clickfunnel Affiliates</div>
+                                            <a href="#">Active</a>
+                                        </div>
+                                        <div class="switch-documentation">
+                                            <div>Welcome</div>
+                                            <a href="#">Active</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="common-background automations-content full-width campaigns-conetnt">
+                                    <div class="title d-flex flex-wrap">
+                                        <h4 class="m-600">Campaigns</h4>
+                                    </div>
+                                    <div class="width-100 documents-signed">
+                                        <div class="switch-documentation">
+                                            <div>SmartFlyer May 2022</div>
+                                            <div class="campaigns-left ">Opened on April 22, 2022</div>
+                                        </div>
+                                        <div class="switch-documentation">
+                                            <div>New alert for COVID 19</div>
+                                            <div class="campaigns-left not-open">Not opened</div>
+                                        </div>
+                                        <div class="switch-documentation">
+                                            <div>Account updates</div>
+                                            <div class="campaigns-left">Opened on April 1, 2022</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="marketing-right notes ">
+                                <div class="common-background left-side">
+                                    <div class="title ">
+                                        <h4 class="m-600">Recent Activities</h4>
+                                        <span>890,344 Sales</span>
+                                    </div>
+                                    <div class="recent-activities">
+                                        <div class="recent-activities-wrap">
+                                            <div class="inner">
+                                                <div class="date-time">11/02</div>
+                                                <div class="dots"></div>
+                                                <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                            </div>
+                                            <div class="inner">
+                                                <div class="date-time">11/02</div>
+                                                <div class="dots"></div>
+                                                <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                            </div>
+                                            <div class="inner">
+                                                <div class="date-time">11/02</div>
+                                                <div class="dots"></div>
+                                                <div class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                                            </div>
+                                            <div class="inner">
+                                                <div class="date-time">11/02</div>
+                                                <div class="dots"></div>
+                                                <div class="content">Outlines keep you honest. Indulging in poorly driving and keep structure</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/dashboard-script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+.dashboard-left-menu {
+    display: inline-block;
+    width: 265px;
+    background-color: #2B2A2A;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+ul.mainmenu {
+    text-align: left;
+    width: 100%;
+    background: #2B2A2A;
+    z-index: 10;
+}
+
+.trip-view-header ul li a {
+    background: #000;
+    border: 1px solid #000;
+}
+
+.trip-view-header ul li a:hover {
+    background-color: transparent;
+    color: #000;
+}
+
+.dashboard-header h1 {
+    color: #333333;
+}
+
+.dashboard-time ul li {
+    color: #333333;
+}
+
+.add-client-form .form-btn input[type="submit"],
+.fancybox-close-button {
+    background-color: #000;
+    color: #fff;
+    border-right: 1px solid rgb(0 0 0 / 20%);
+}
+.add-client-form .form-btn input[type="submit"]:hover,
+.fancybox-close-button:hover {
+    border-color: rgb(0 0 0 / 20%);
+    background-color: transparent;
+    color: #000;
+}
+.cancel-btn {
+    border-color: rgb(0 0 0 / 20%) !important;
+    background-color: transparent !important;
+    color: #000 !important;
+}
+.cancel-btn:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-right: 1px solid rgb(0 0 0 / 20%) !important;
+}
+.switch-documentation input:checked + .slider {
+    background-color: #000;
+}
+.switch-documentation input:focus + .slider {
+    box-shadow: 0 0 1px #000;
+}
+
+.detail-page-btn {
+    background: #EB5757 !important;
+    border: 1px solid #EB5757 !important;
+    text-transform: uppercase !important;
+}
+
+.detail-page-btn:hover {
+    background: #EB5757 !important;
+    background-color: transparent !important;
+    color: #EB5757 !important;
+}

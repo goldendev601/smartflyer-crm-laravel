@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard d-flex flex-wrap">
+        <div class="dashboard-left-menu">
+            <div class="logo">
+                <a href="dashboard.html">
+                    <img src="images/white-logo.png">
+                </a>
+            </div>
+            <div class="dashboard-menu">
+                <ul class="mainmenu">
+                    <li>
+                        <a href="dashboard.html"><img src="images/home.png"> Home</a>
+                    </li>
+                    <li class="">
+                        <a href="#"><img src="images/Clients.png"> Clients</a>
+                        <ul>
+                            <li class="">
+                                <a href="all-clients.html">All clients</a>
+                            </li>
+                            <li class="">
+                                <a href="clients-upcoming-trips.html">Upcoming trips</a>
+                            </li>
+                            <li class="">
+                                <a href="clients-calendar.html">Calendar</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="trips.html"><img src="images/Trips.png"> Trips</a>
+                    </li>
+                    <li>
+                        <a href="partners.html"><img src="images/Partners.png"> Partners</a>
+                    </li>
+                    <li class="active">
+                        <a href="to-do.html"><img src="images/To-do.png"> To-do</a>
+                    </li>
+                    <li class="">
+                        <a href="agents.html"><img src="images/Agents.png"> Agents</a>
+                    </li>
+                    <li class="">
+                        <a href="settings.html"><img src="images/Settings.png">
+                        Settings</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="dashboard-menu-sidebar">
+                <div class="inner d-flex flex-wrap">
+                    <div class="image">
+                        <img src="images/clients-2.png">
+                    </div>
+                    <div class="content white">
+                        <h3>Martin Doe</h3>
+                        <a href="javascript:void(0)">martindoe@gmail.com</a>
+                    </div>
+                </div>
+                <div class="dashboard-logout" style="display: none;">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Log Out</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="bi bi-question-circle-fill"></i> Help</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-details dashboard-header padding-spacing">
+            <div class="trip-view-header d-flex flex-wrap justify-content-space-between align-items-center">
+                <h1>To-do</h1>
+                <ul class="d-flex flex-wrap justify-content-flex-end m-600">
+                    <li>
+                        <a href="#add-new-task" data-fancybox>Add Task</a>
+                        <div class="edit-popup fancybox-content important-dates add-new-task" id="add-new-task" style="display: none;">
+                            <div class="title-wrap">
+                              <h1>Add new task</h1>
+                            </div>
+                            <div class="add-client-form">
+                                <form>
+                                   <ul>
+                                        <li>
+                                            <label for="uname"><b>Task name</b></label>
+                                            <input type="text" placeholder="Enter name" name="uname" required="">
+                                        </li>
+                                        <li>
+                                            <label for="uname"><b>Deadline</b></label>
+                                            <input type="date" name="Deadline" required="" placeholder="Set deadline">
+                                        </li>
+                                        <li class="width-100">
+                                            <label for="uname"><b>Enter task details</b></label>
+                                            <input type="text" placeholder="Enter details" name="details" required="">
+                                        </li>
+                                        <li class="frequency-section">
+                                            <label for="uname"><b>Remind me on...</b></label>
+                                            <select class="form-select">
+                                                <option>Remind me on...</option>
+                                                <option>Remind me on... 1</option>
+                                                <option>Remind me on... 2</option>
+                                                <option>Remind me on... 3</option>
+                                           </select>
+                                        </li>
+                                         <li class="frequency-section">
+                                            <label for="uname"><b>Status</b></label>
+                                            <select class="form-select">
+                                                <option>Pending</option>
+                                                <option>Pending 1</option>
+                                                <option>Pending 2</option>
+                                                <option>Pending 3</option>
+                                           </select>
+                                        </li>
+                                   </ul>
+                                   <div class="form-btn">
+                                      <input type="submit" value="Cancel">
+                                      <input type="submit" value="Save changes">
+                                   </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="clients-tab-section">
+                <div class="clients-tab d-flex flex-wrap justify-content-space-between">
+                    <ul class="tabs d-flex flex-wrap to-do-tab">
+                        <li class="active" rel="tab1"><span>All</span></li>
+                        <li rel="tab2"><span>Open</span></li>
+                        <li rel="tab3"><span>Completed</span></li>
+                    </ul>
+                </div>
+                <div class="tab_container">
+                    <div id="tab1" class="tab_content">
+                        <div class="todo-all-tab">
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox1">
+                                        <label for="checkbox1"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Due monday</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox4">
+                                        <label for="checkbox4"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Due monday</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox2">
+                                        <label for="checkbox2"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Due monday</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox3">
+                                        <label for="checkbox3"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Due monday</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox5">
+                                        <label for="checkbox5"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Due monday</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox6">
+                                        <label for="checkbox6"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Due monday</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox7">
+                                        <label for="checkbox7"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Due monday</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox8">
+                                        <label for="checkbox8"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Due monday</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox9">
+                                        <label for="checkbox9"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Due monday</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab_content">
+                       <div class="todo-all-tab">
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox1">
+                                        <label for="checkbox1"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Due monday</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox4">
+                                        <label for="checkbox4"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Due monday</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab_content">
+                        <div class="todo-all-tab">
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox1">
+                                        <label for="checkbox1"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Completed</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox4">
+                                        <label for="checkbox4"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Completed</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox4">
+                                        <label for="checkbox4"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Completed</li>
+                            </ul>
+                            <ul>
+                                <li class="check-box">
+                                    <div class="form-group">
+                                        <input type="checkbox" id="checkbox4">
+                                        <label for="checkbox4"></label>
+                                    </div>
+                                </li>
+                                <li class="information">
+                                    <div class="content">
+                                        <h4>Complete information for trip</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                    </div>
+                                </li>
+                                <li class="user-img-wrap">
+                                    <div class="user-img">
+                                        <img src="images/image-1.png">
+                                    </div>
+                                    <h6>Sarah Stevens</h6>
+                                </li>
+                                <li class="due-date">Completed</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script type="text/javascript" src="js/dashboard-script.js"></script>
+
+</body>
+</html>

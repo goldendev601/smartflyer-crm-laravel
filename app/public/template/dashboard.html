@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dashboard</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="dashboard d-flex flex-wrap">
+		<div class="dashboard-left-menu">
+			<div class="logo">
+				<img src="images/white-logo.png">
+			</div>
+			<div class="dashboard-menu">
+               <ul class="mainmenu">
+                <li class="active"><a href="#"><img src="images/home.png"> Home</a></li>
+                <li><a href="#"><img src="images/Clients.png"> Clients</a>
+                    <ul>
+                        <li><a href="all-clients.html">All clients</a></li>
+                        <li><a href="#">Upcoming trips</a></li>
+                        <li><a href="#">Calendar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="images/Trips.png"> Trips</a></li>
+                <li><a href="#"><img src="images/Partners.png"> Partners</a>
+                    <ul> 
+                        <li><a href="#">All clients</a></li>
+                        <li><a href="#">Upcoming trips</a></li>
+                        <li><a href="#">Calendar</a>
+                            <ul> 
+                                <li><a href="#">All clients</a>
+                                    <ul> 
+                                        <li><a href="#">All clients</a></li>
+                                        <li><a href="#">Upcoming trips</a></li>
+                                        <li><a href="#">Calendar</a></li>
+                                    </ul> </li>
+                                    <li><a href="#">Upcoming trips</a>
+                                        <ul> 
+                                            <li><a href="#">All clients</a></li>
+                                            <li><a href="#">Upcoming trips</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                        </ul>   
+                                    </li>
+                                    <li><a href="#">Calendar</a>
+                                        <ul> 
+                                            <li><a href="#">All clients</a></li>
+                                            <li><a href="#">Upcoming trips</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                        </ul> 
+                                    </li>
+                                </ul>	
+                            </li>
+                            <li><a href="#">Link 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/To-do.png"> To-do</a></li>
+                    <li><a href="#"><img src="images/Agents.png"> Agents</a></li>
+                    <li><a href="#"><img src="images/Settings.png"> Settings</a></li>
+                </ul>
+            </div>
+            <div class="dashboard-menu-sidebar">
+                <div class="inner d-flex flex-wrap">
+                    <div class="image">
+                        <img src="images/clients-2.png">
+                    </div>
+                    <div class="content white">
+                        <h3>Martin Doe</h3>
+                        <a href="mailto:martindoe@gmail.com">martindoe@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-details">
+            <div class="dashboard-wrap">
+                <div class="inner">
+                    <div class="dashboard-header d-flex flex-wrap">
+                        <h1>Welcome, Martin!</h1>
+                        <div class="dashboard-time d-flex flex-wrap align-items-center ">
+                            <ul>
+                                <li class="d-flex align-items-center"><img src="images/cloud.png"> 22°F - New York City, NY</li>
+                                <li class="clock d-flex align-items-center"><img src="images/clock.png"> 10:30 AM </li>
+                            </ul>
+                            <div class="search-icon">
+                                <div class="search-toggle "> <img src="images/search.png"></div>
+                                <div class="clock-toggle-content ">
+                                    <div class="top-client">
+                                        <h3>World Clock</h3>
+                                    </div>
+                                    <div class="world-clock-time d-flex flex-wrap">
+                                        <div class="world-clock-time-wrap">
+                                            <ul class="d-flex flex-wrap ">
+                                                <li class="image"><img src="images/World-Clock.png"></li>
+                                                <li class="time-wrap"><h3 class="m-600 black">New york</h3><h4 class="m-600 black">10:30 AM</h4></li>
+                                                <li class="utc-time"><h5 class="black">UTC−04:00</h5></li>
+                                            </ul>
+                                        </div>
+                                        <div class="world-clock-time-wrap">
+                                            <ul class="d-flex flex-wrap ">
+                                                <li class="image"><img src="images/World-Clock-2.png"></li>
+                                                <li class="time-wrap"><h3 class="m-600 black">Los Angeles</h3><h4 class="m-600 black">7:30 AM</h4></li>
+                                                <li class="utc-time"><h5 class="black">UTC−07:00</h5></li>
+                                            </ul>
+                                        </div>
+                                        <div class="world-clock-time-wrap">
+                                            <ul class="d-flex flex-wrap ">
+                                                <li class="image"><img src="images/World-Clock-3.png"></li>
+                                                <li class="time-wrap"><h3 class="m-600 black">London</h3><h4 class="m-600 black">3:30 PM</h4></li>
+                                                <li class="utc-time"><h5 class="black">GMT+01:00</h5></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="view-all justify-content-flex-end flex-wrap d-flex">
+                                        <a href="#" class="blue-oblivion-color m-600">Add/Edit regions <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-content d-flex flex-wrap ">
+                        <div class="dashboard-left">
+                            <div class="dashboard-chart d-flex flex-wrap margin-15">
+                                <div class="dashboard-chart-wrap col-3">
+                                    <div class="inner box-hover">
+                                        <h3>Total sales for May</h3>
+                                        <h2>$3,620</h2>
+                                        <div class="chart-details d-flex  align-items-center justify-content-space-between">
+                                            <div class="chart-percentage">
+                                                <h5>27% <img src="images/chart-up.png"></h5>
+                                                <h6>10 Clients</h6>
+                                            </div>
+                                            <div class="graph">
+                                                <img src="images/graph.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard-chart-wrap col-3">
+                                    <div class="inner box-hover">
+                                        <h3>Last week’s revenue</h3>
+                                        <h2>$1,110</h2>
+                                        <div class="chart-details d-flex align-items-center justify-content-space-between">
+                                            <div class="chart-percentage up-graph">
+                                                <h5>27% <img src="images/chart-up.png"></h5>
+                                                <h6>28 Bookings</h6>
+                                            </div>
+                                            <div class="graph">
+                                                <img src="images/graph.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard-chart-wrap col-3">
+                                    <div class="inner box-hover">
+                                        <h3>New clients</h3>
+                                        <h2>10</h2>
+                                        <div class="chart-details d-flex align-items-center justify-content-space-between">
+                                            <div class="chart-percentage down-graph">
+                                                <h5>14% <img src="images/chart-down.png"></h5>
+                                                <h6>10 Clients</h6>
+                                            </div>
+                                            <div class="graph">
+                                                <img src="images/graph.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="upcoming-trips common-background m-top-23">
+                                <div class="inner">
+                                    <div class="title  d-flex flex-wrap">
+                                        <h3 class="m-600">Upcoming trips</h3>
+                                        <div><a href="#" class="trip blue-oblivion-color m-600"> Add trip<i class="fa fa-plus" aria-hidden="true"></i></a></div>
+                                    </div>
+                                    <div class="upcoming-trips-details">
+                                        <div class="inner">
+                                            <ul>
+                                                <li class="m-600"><h3 class="m-600 black">Summer in Italy</h3>Amalfi Coast</li>
+                                                <li><img src="images/image-1.png"> Maddy Jones </li>
+                                                <li>July 17 to August 1 </li>
+                                                <li><div class="btn"><a href="#" class="m-600">Upcoming</a></div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="inner">
+                                            <ul>
+                                                <li class="m-600"><h3 class="m-600 black">Europe 2022</h3>France, Portugal, Spain</li>
+                                                <li><img src="images/image-1.png"> Maddy Jones </li>
+                                                <li>July 17 to August 1 </li>
+                                                <li><div class="btn"><a href="#" class="m-600">Upcoming</a></div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="inner">
+                                            <ul>
+                                                <li class="m-600"><h3 class="m-600 black">Europe 2022</h3>France, Portugal, Spain</li>
+                                                <li><img src="images/image-1.png"> Maddy Jones </li>
+                                                <li>July 17 to August 1 </li>
+                                                <li><div class="btn"><a href="#" class="m-600">Upcoming</a></div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="inner">
+                                            <ul>
+                                                <li class="m-600"><h3 class="m-600 black">Europe 2022</h3>France, Portugal, Spain</li>
+                                                <li><img src="images/image-1.png"> Maddy Jones </li>
+                                                <li>July 17 to August 1 </li>
+                                                <li><div class="btn"><a href="#" class="m-600">Upcoming</a></div></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="view-all justify-content-flex-end flex-wrap d-flex"><a href="#" class="blue-oblivion-color m-600">View all upcoming trips <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                                </div>
+                            </div>
+                            <div class="top-client common-background">
+                                <div class="top-client-wrap-in">
+                                    <div class="title  d-flex flex-wrap">
+                                        <h3 class="m-600">Top Clients</h3>
+                                        <div class="view-all justify-content-flex-end flex-wrap d-flex"><a href="#" class="blue-oblivion-color m-600">View all clients <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+                                    </div>
+                                    <div class="top-client-details d-flex flex-wrap ">
+                                        <div class="top-client-wrap">
+                                            <div class="inner  box-hover">
+                                                <div class="d-flex flex-wrap">
+                                                    <div class="imge-chart">
+                                                        <img src="images/clients-1.png">
+                                                    </div>
+                                                    <div class="chart-percentage up-graph">
+                                                        <h5>27% <img src="images/chart-up.png"></h5>    
+                                                    </div>
+                                                </div>
+                                                <div class="clients-detlis">
+                                                    <div class="client-name">Sarah Stevens</div>
+                                                    <a href="mailto:martindoe@gmail.com">martindoe@gmail.com</a>
+                                                    <h3>$243,900</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="top-client-wrap ">
+                                            <div class="inner box-hover">
+                                                <div class="d-flex flex-wrap">
+                                                    <div class="imge-chart">
+                                                        <img src="images/clients-2.png">
+                                                    </div>
+                                                    <div class="chart-percentage up-graph">
+                                                        <h5>27% <img src="images/chart-up.png"></h5>    
+                                                    </div>
+                                                </div>
+                                                <div class="clients-detlis">
+                                                    <div class="client-name">Martin Doe</div>
+                                                    <a href="mailto:martindoe@gmail.com">martindoe@gmail.com</a>
+                                                    <h3>$243,900</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="top-client-wrap">
+                                            <div class="inner  box-hover">
+                                                <div class="d-flex flex-wrap">
+                                                    <div class="imge-chart">
+                                                        <img src="images/clients-6.png">
+                                                    </div>
+                                                    <div class="chart-percentage">
+                                                        <h5>27% <img src="images/chart-up.png"></h5>    
+                                                    </div>
+                                                </div>
+                                                <div class="clients-detlis">
+                                                    <div class="client-name">Maddy Jones</div>
+                                                    <a href="mailto:martindoe@gmail.com">martindoe@gmail.com</a>
+                                                    <h3>$243,900</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="top-client-wrap ">
+                                            <div class="inner box-hover">
+                                                <div class="d-flex flex-wrap">
+                                                    <div class="imge-chart">
+                                                        <img src="images/clients-5.png">
+                                                    </div>
+                                                    <div class="chart-percentage">
+                                                        <h5>27% <img src="images/chart-up.png"></h5>    
+                                                    </div>
+                                                </div>
+                                                <div class="clients-detlis">
+                                                    <div class="client-name">Mark Limm</div>
+                                                    <a href="mailto:martindoe@gmail.com">martindoe@gmail.com</a>
+                                                    <h3>$243,900</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="top-client-wrap ">
+                                            <div class="inner box-hover">
+                                                <div class="d-flex flex-wrap">
+                                                    <div class="imge-chart">
+                                                        <img src="images/clients-4.png">
+                                                    </div>
+                                                    <div class="chart-percentage down-graph">
+                                                        <h5>27% <img src="images/chart-down.png"></h5>    
+                                                    </div>
+                                                </div>
+                                                <div class="clients-detlis">
+                                                    <div class="client-name">Stephen James</div>
+                                                    <a href="mailto:martindoe@gmail.com">martindoe@gmail.com</a>
+                                                    <h3>$243,900</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="top-client-wrap ">
+                                            <div class="inner box-hover">
+                                                <div class="d-flex flex-wrap">
+                                                    <div class="imge-chart">
+                                                        <img src="images/clients-3.png">
+                                                    </div>
+                                                    <div class="chart-percentage down-graph">
+                                                        <h5>27% <img src="images/chart-down.png"></h5>    
+                                                    </div>
+                                                </div>
+                                                <div class="clients-detlis">
+                                                    <div class="client-name">Anna Lock</div>
+                                                    <a href="mailto:martindoe@gmail.com">martindoe@gmail.com</a>
+                                                    <h3>$243,900</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-right sidebar">
+                            <div class="dashboard-right-wrap common-background">
+                                <div class="sidebar-title">
+                                    <h4>This week’s summary</h4>
+                                </div>
+                                <div class="summary-wrap">
+                                    <div class="week-summary">
+                                        <div class="summary-wrap">
+                                            <input type="checkbox" checked="checked">
+                                            <label> Complete information for trip</label>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                        <div class="due-date"><a href="#">Due monday</a></div>
+                                    </div>
+                                    <div class="week-summary">
+                                        <div class="summary-wrap">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Submit proposals for new clients</label>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                        <div class="due-date"><a href="#">Due monday</a></div>
+                                    </div>
+                                    <div class="week-summary">
+                                        <div class="summary-wrap">
+                                            <input type="checkbox" checked="checked">
+                                            <label>Review revenue numbers for March</label>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                        <div class="due-date"><a href="#">Due monday</a></div>
+                                    </div>
+                                </div>
+                                <div class="view-all  d-flex flex-wrap justify-content-flex-end">
+                                    <a href="#" class="blue-oblivion-color m-600">View all to-dos <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            <div class="dashboard-right-wrap common-background m-top-23 destinations-sec">
+                                <div class="sidebar-title">
+                                    <h4>Top Destinations</h4>
+                                </div>
+                                <div class="destinations-wrap">
+                                    <div class="destinations-in">
+                                        <a data-fancybox  href="#france">
+                                            <div class="destinations-image white" style="background: url(images/product1.png) no-repeat center /cover;">
+                                                <h2>France</h2>
+                                                <span>Ramatuelle, France</span>
+                                                <div class="content">10 Trips in the last Month</div>
+                                            </div>
+                                        </a>
+                                        <div style="display: none;" id="france" class="destinations-trip-view">
+                                            <div class="trip-view-section d-flex flex-wrap">
+                                                <div class="trip-view-left">
+                                                    <div class="trip-header">
+                                                        <div class="top-header d-flex flex-wrap align-items-center">
+                                                            <h2 class="black">Trip to France</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="trip-details">
+                                                        <div class="trip-details-wrap d-flex flex-wrap">
+                                                            <div class="image">
+                                                                <img src="images/clients-2.png">
+                                                            </div>
+                                                            <div class="trip-details-content">
+                                                                <h3>Martin Doe</h3>
+                                                                <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                                                <ul>
+                                                                    <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234"  class="black ">+1 (212) 855 1234</a></li>
+                                                                    <li  class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="itinerary-section">
+                                                        <div class="title-top"><h3>Itinerary</h3></div>
+                                                        <div class="itinerary-wrap">
+                                                            <div class="itinerary-month">
+                                                                <div class="month">
+                                                                    <h2>July 9</h2>
+                                                                </div>
+                                                                <div class="itinerary-details">
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="itinerary-month">
+                                                                <div class="month">
+                                                                    <h2>July 9</h2>
+                                                                </div>
+                                                                <div class="itinerary-details">
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="trip-view-right" style="background: url(images/login-form-image.png) no-repeat center / cover;">
+                                                    <div class="trip-view-header d-flex flex-wrap justify-content-flex-end align-items-center">
+                                                        <div class="trip-view-search">
+                                                            <div class="search">
+                                                                <img src="images/search.png">
+                                                            </div>
+                                                            <div class="search-box">
+                                                                <input type="text" placeholder=""/>
+                                                                <input type="button" value="Search"/>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap justify-content-flex-end m-600">
+                                                            <li><a href="#">New Report</a></li>
+                                                            <li><a href="javascript:void(0)" class="view-task-btn">View tasks</a>
+                                                                <div class="trip-details-tasks white">
+                                                                    <h1>Trip details</h1>
+                                                                    <div class="received-date">
+                                                                        <span>Received till date</span>
+                                                                        <strong>$8,345</strong>
+                                                                    </div>
+                                                                    <div class="multigraph">
+                                                                        <div class="multigraph-content">
+                                                                            <div class="multigraph-width">
+                                                                                <strong>70%</strong>
+                                                                                <span>Paid</span>
+                                                                                <p>$2,115 Pending</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <span class="graph-div"></span>
+                                                                    </div>
+                                                                    <div class="dashboard-right">
+                                                                        <div class="trip-details-header d-flex flex-wrap align-items-center">
+                                                                            <h2>To-do</h2>
+                                                                            <a href="#">Add task</a>
+                                                                        </div>
+                                                                        <div class="dashboard-right-wrap">
+                                                                            <div class="summary-wrap">
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label> Complete information for trip</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label>Submit proposals for new clients</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label>Review revenue numbers for March</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">Edit trip</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="destinations-in">
+                                        <a data-fancybox  href="#springs">
+                                            <div class="destinations-image white" style="background: url(images/product2.png) no-repeat center /cover;">
+                                                <h2>Palm Springs</h2>
+                                                <span>Capri, Palm Springs</span>
+                                                <div class="content">10 Trips in the last Month</div>
+                                            </div>
+                                        </a>
+                                        <div style="display: none;" id="springs" class="destinations-trip-view">
+                                            <div class="trip-view-section d-flex flex-wrap">
+                                                <div class="trip-view-left">
+                                                    <div class="trip-header">
+                                                        <div class="top-header d-flex flex-wrap align-items-center">
+                                                            <h2 class="black">Trip to Palm Springs</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="trip-details">
+                                                        <div class="trip-details-wrap d-flex flex-wrap">
+                                                            <div class="image">
+                                                                <img src="images/clients-2.png">
+                                                            </div>
+                                                            <div class="trip-details-content">
+                                                                <h3>Martin Doe</h3>
+                                                                <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                                                <ul>
+                                                                    <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234"  class="black ">+1 (212) 855 1234</a></li>
+                                                                    <li  class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="itinerary-section">
+                                                        <div class="title-top"><h3>Itinerary</h3></div>
+                                                        <div class="itinerary-wrap">
+                                                            <div class="itinerary-month">
+                                                                <div class="month">
+                                                                    <h2>July 9</h2>
+                                                                </div>
+                                                                <div class="itinerary-details">
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="itinerary-month">
+                                                                <div class="month">
+                                                                    <h2>July 9</h2>
+                                                                </div>
+                                                                <div class="itinerary-details">
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="trip-view-right" style="background: url(images/login-form-image.png) no-repeat center / cover;">
+                                                    <div class="trip-view-header d-flex flex-wrap justify-content-flex-end align-items-center">
+                                                        <div class="trip-view-search">
+                                                            <div class="search">
+                                                                <img src="images/search.png">
+                                                            </div>
+                                                            <div class="search-box">
+                                                                <input type="text" placeholder=""/>
+                                                                <input type="button" value="Search"/>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap justify-content-flex-end m-600">
+                                                            <li><a href="#">New Report</a></li>
+                                                            <li><a href="javascript:void(0)" class="view-task-btn">View tasks</a>
+                                                                <div class="trip-details-tasks white">
+                                                                    <h1>Trip details</h1>
+                                                                    <div class="received-date">
+                                                                        <span>Received till date</span>
+                                                                        <strong>$8,345</strong>
+                                                                    </div>
+                                                                    <div class="multigraph">
+                                                                        <div class="multigraph-content">
+                                                                            <div class="multigraph-width">
+                                                                                <strong>70%</strong>
+                                                                                <span>Paid</span>
+                                                                                <p>$2,115 Pending</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <span class="graph-div"></span>
+                                                                    </div>
+                                                                    <div class="dashboard-right">
+                                                                        <div class="trip-details-header d-flex flex-wrap align-items-center">
+                                                                            <h2>To-do</h2>
+                                                                            <a href="#">Add task</a>
+                                                                        </div>
+                                                                        <div class="dashboard-right-wrap">
+                                                                            <div class="summary-wrap">
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label> Complete information for trip</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label>Submit proposals for new clients</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label>Review revenue numbers for March</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">Edit trip</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="destinations-in">
+                                        <a data-fancybox  href="#italy">
+                                            <div class="destinations-image white" style="background: url(images/product3.png) no-repeat center /cover;">
+                                                <h2>Italy</h2>
+                                                <span>Capri, Italy</span>
+                                                <div class="content">10 Trips in the last Month</div>
+                                            </div>
+                                        </a>
+                                        <div style="display: none;" id="italy" class="destinations-trip-view">
+                                            <div class="trip-view-section d-flex flex-wrap">
+                                                <div class="trip-view-left">
+                                                    <div class="trip-header">
+                                                        <div class="top-header d-flex flex-wrap align-items-center">
+                                                            <h2 class="black">Trip to Italy</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="trip-details">
+                                                        <div class="trip-details-wrap d-flex flex-wrap">
+                                                            <div class="image">
+                                                                <img src="images/clients-2.png">
+                                                            </div>
+                                                            <div class="trip-details-content">
+                                                                <h3>Martin Doe</h3>
+                                                                <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                                                <ul>
+                                                                    <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234"  class="black ">+1 (212) 855 1234</a></li>
+                                                                    <li  class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="itinerary-section">
+                                                        <div class="title-top"><h3>Itinerary</h3></div>
+                                                        <div class="itinerary-wrap">
+                                                            <div class="itinerary-month">
+                                                                <div class="month">
+                                                                    <h2>July 9</h2>
+                                                                </div>
+                                                                <div class="itinerary-details">
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="itinerary-month">
+                                                                <div class="month">
+                                                                    <h2>July 9</h2>
+                                                                </div>
+                                                                <div class="itinerary-details">
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="trip-view-right" style="background: url(images/login-form-image.png) no-repeat center / cover;">
+                                                    <div class="trip-view-header d-flex flex-wrap justify-content-flex-end align-items-center">
+                                                        <div class="trip-view-search">
+                                                            <div class="search">
+                                                                <img src="images/search.png">
+                                                            </div>
+                                                            <div class="search-box">
+                                                                <input type="text" placeholder=""/>
+                                                                <input type="button" value="Search"/>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap justify-content-flex-end m-600">
+                                                            <li><a href="#">New Report</a></li>
+                                                            <li><a href="javascript:void(0)" class="view-task-btn">View tasks</a>
+                                                                <div class="trip-details-tasks white">
+                                                                    <h1>Trip details</h1>
+                                                                    <div class="received-date">
+                                                                        <span>Received till date</span>
+                                                                        <strong>$8,345</strong>
+                                                                    </div>
+                                                                    <div class="multigraph">
+                                                                        <div class="multigraph-content">
+                                                                            <div class="multigraph-width">
+                                                                                <strong>70%</strong>
+                                                                                <span>Paid</span>
+                                                                                <p>$2,115 Pending</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <span class="graph-div"></span>
+                                                                    </div>
+                                                                    <div class="dashboard-right">
+                                                                        <div class="trip-details-header d-flex flex-wrap align-items-center">
+                                                                            <h2>To-do</h2>
+                                                                            <a href="#">Add task</a>
+                                                                        </div>
+                                                                        <div class="dashboard-right-wrap">
+                                                                            <div class="summary-wrap">
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label> Complete information for trip</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label>Submit proposals for new clients</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label>Review revenue numbers for March</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">Edit trip</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="destinations-in">
+                                        <a data-fancybox  href="#bahamas">
+                                            <div class="destinations-image white" style="background: url(images/product3.png) no-repeat center /cover;">
+                                                <h2>Bahamas</h2>
+                                                <span>Bahamas</span>
+                                                <div class="content">10 Trips in the last Month</div>
+                                            </div>
+                                        </a>
+                                        <div style="display: none;" id="bahamas" class="destinations-trip-view">
+                                            <div class="trip-view-section d-flex flex-wrap">
+                                                <div class="trip-view-left">
+                                                    <div class="trip-header">
+                                                        <div class="top-header d-flex flex-wrap align-items-center">
+                                                            <h2 class="black">Trip to Bahamas</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="trip-details">
+                                                        <div class="trip-details-wrap d-flex flex-wrap">
+                                                            <div class="image">
+                                                                <img src="images/clients-2.png">
+                                                            </div>
+                                                            <div class="trip-details-content">
+                                                                <h3>Martin Doe</h3>
+                                                                <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                                                <ul>
+                                                                    <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234"  class="black ">+1 (212) 855 1234</a></li>
+                                                                    <li  class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="itinerary-section">
+                                                        <div class="title-top"><h3>Itinerary</h3></div>
+                                                        <div class="itinerary-wrap">
+                                                            <div class="itinerary-month">
+                                                                <div class="month">
+                                                                    <h2>July 9</h2>
+                                                                </div>
+                                                                <div class="itinerary-details">
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="itinerary-month">
+                                                                <div class="month">
+                                                                    <h2>July 9</h2>
+                                                                </div>
+                                                                <div class="itinerary-details">
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="itinerary-inner">
+                                                                        <div class="inner">
+                                                                            <div class="left-image">
+                                                                                <img src="images/itinerary-1.png">
+                                                                            </div>
+                                                                            <div class="content">
+                                                                                <h3 class="m-600 black">Flight to Capri</h3>
+                                                                                <h4 class="m-600">From New York, NY to Capri, Italy</h4>
+                                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor purus, condimentum hac morbi sit.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="trip-view-right" style="background: url(images/login-form-image.png) no-repeat center / cover;">
+                                                    <div class="trip-view-header d-flex flex-wrap justify-content-flex-end align-items-center">
+                                                        <div class="trip-view-search">
+                                                            <div class="search">
+                                                                <img src="images/search.png">
+                                                            </div>
+                                                            <div class="search-box">
+                                                                <input type="text" placeholder=""/>
+                                                                <input type="button" value="Search"/>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="d-flex flex-wrap justify-content-flex-end m-600">
+                                                            <li><a href="#">New Report</a></li>
+                                                            <li><a href="javascript:void(0)" class="view-task-btn">View tasks</a>
+                                                                <div class="trip-details-tasks white">
+                                                                    <h1>Trip details</h1>
+                                                                    <div class="received-date">
+                                                                        <span>Received till date</span>
+                                                                        <strong>$8,345</strong>
+                                                                    </div>
+                                                                    <div class="multigraph">
+                                                                        <div class="multigraph-content">
+                                                                            <div class="multigraph-width">
+                                                                                <strong>70%</strong>
+                                                                                <span>Paid</span>
+                                                                                <p>$2,115 Pending</p>
+                                                                            </div>
+                                                                        </div>
+                                                                        <span class="graph-div"></span>
+                                                                    </div>
+                                                                    <div class="dashboard-right">
+                                                                        <div class="trip-details-header d-flex flex-wrap align-items-center">
+                                                                            <h2>To-do</h2>
+                                                                            <a href="#">Add task</a>
+                                                                        </div>
+                                                                        <div class="dashboard-right-wrap">
+                                                                            <div class="summary-wrap">
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label> Complete information for trip</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label>Submit proposals for new clients</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                                <div class="week-summary">
+                                                                                    <div class="week-summary-in">
+                                                                                        <div class="summary-wrap">
+                                                                                            <input type="checkbox" checked="checked">
+                                                                                            <label>Review revenue numbers for March</label>
+                                                                                        </div>
+                                                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                                                                    </div>
+                                                                                    <div class="due-date"><a href="#">Due monday</a></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">Edit trip</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="view-all  destinations-btn d-flex flex-wrap justify-content-flex-end">
+                                    <a href="#" class="blue-oblivion-color m-600">View all destinations<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="js/dashboard-script.js"></script>
+
+</body>
+</html>

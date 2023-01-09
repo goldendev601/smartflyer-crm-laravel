@@ -1,0 +1,16 @@
+.dashboard-left-menu { display: none; }
+.thank-you-sec h1 { font-weight: 300; font-size: 48px; line-height: 48px; text-align: center; }
+.thank-you-sec { max-width: 840px; margin: 0 auto; padding-top: 206px; }
+.thank-you-sec .content { text-align: center; font-family: 'Montserrat'; font-style: normal; font-weight: 400; font-size: 12px; line-height: 19px; padding: 18px 0 0; color: #000000; opacity: 0.5; }
+.thank-you-sec .image-wrap img { border-radius: 293.5px 0px 0px 0px; display: block; margin: 0 auto; width: 701px; height: 600px; object-fit: cover; }
+.thank-you-sec .image-wrap { padding-top: 67px; }
+.thankyou-main-wrap { width: 100%; }
+.thankyou-main-wrap .logo { padding: 36px 35px 0; }
+@media (min-width:1750px) {
+    .thank-you-sec { height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; }
+}
+@media (max-width:1440px) {
+    .thank-you-sec { padding-top: 30px; }
+    .thank-you-sec .image-wrap img { height: 430px; }
+    
+}

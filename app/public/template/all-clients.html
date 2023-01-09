@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>All clients</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dashboard d-flex flex-wrap">
+        <div class="dashboard-left-menu">
+            <div class="logo">
+                <img src="images/white-logo.png">
+            </div>
+            <div class="dashboard-menu">
+             <ul class="mainmenu">
+                <li class="active"><a href="#"><img src="images/home.png"> Home</a></li>
+                <li><a href="#"><img src="images/Clients.png"> Clients</a>
+                    <a class=" child-open"><span></span></a>
+                    <ul style="display: block;">
+                        <li class="active"><a href="all-clients.html">All clients</a></li>
+                        <li><a href="clients-upcoming-trips.html">Upcoming trips</a></li>
+                        <li><a href="#">Calendar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><img src="images/Trips.png"> Trips</a></li>
+                <li><a href="#"><img src="images/Partners.png"> Partners</a>
+                    <ul> 
+                        <li><a href="#">All clients</a></li>
+                        <li><a href="#">Upcoming trips</a></li>
+                        <li><a href="#">Calendar</a>
+                            <ul> 
+                                <li><a href="#">All clients</a>
+                                    <ul> 
+                                        <li><a href="#">All clients</a></li>
+                                        <li><a href="#">Upcoming trips</a></li>
+                                        <li><a href="#">Calendar</a></li>
+                                    </ul> </li>
+                                    <li><a href="#">Upcoming trips</a>
+                                        <ul> 
+                                            <li><a href="#">All clients</a></li>
+                                            <li><a href="#">Upcoming trips</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                        </ul>   
+                                    </li>
+                                    <li><a href="#">Calendar</a>
+                                        <ul> 
+                                            <li><a href="#">All clients</a></li>
+                                            <li><a href="#">Upcoming trips</a></li>
+                                            <li><a href="#">Calendar</a></li>
+                                        </ul> 
+                                    </li>
+                                </ul>   
+                            </li>
+                            <li><a href="#">Link 4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><img src="images/To-do.png"> To-do</a></li>
+                    <li><a href="#"><img src="images/Agents.png"> Agents</a></li>
+                    <li><a href="#"><img src="images/Settings.png"> Settings</a></li>
+                </ul>
+            </div>
+            <div class="dashboard-menu-sidebar">
+                <div class="inner d-flex flex-wrap">
+                    <div class="image">
+                        <img src="images/clients-2.png">
+                    </div>
+                    <div class="content white">
+                        <h3>Martin Doe</h3>
+                        <a href="mailto:martindoe@gmail.com">martindoe@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-details dashboard-header padding-spacing">
+            <div class="trip-view-header d-flex flex-wrap justify-content-space-between align-items-center">
+                <h1>Clients</h1>
+                <ul class="d-flex flex-wrap justify-content-flex-end m-600">
+                    <li><a href="#trip-pending-tasks" class="view-task-btn">Pending tasks</a>
+                        <div class="trip-pending-tasks ">
+                            <div class="trip-details-tasks white" style="">
+                               <h1>Here is what’s pending</h1>
+                               <div class="multigraph">
+                                  <div class="multigraph-content">
+                                     <div class="multigraph-width">
+                                        <span>Your progress</span>
+                                        <p>890,344 Sales</p>
+                                     </div>
+                                  </div>
+                                  <span class="graph-div"></span>
+                                  <div class="content">Keep up the good job, you are among the top 1% of sellers</div>
+                               </div>
+                               <div class="dashboard-right">
+                                  <div class="trip-details-header d-flex flex-wrap align-items-center">
+                                     <h2>To-do this week</h2>
+                                     <a href="#">Add task</a>
+                                  </div>
+                                  <div class="dashboard-right-wrap">
+                                     <div class="summary-wrap">
+                                        <div class="week-summary">
+                                           <div class="week-summary-in">
+                                              <div class="summary-wrap">
+                                                 <input type="checkbox" checked="checked">
+                                                 <label> Complete information for trip</label>
+                                              </div>
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                           </div>
+                                           <div class="due-date"><a href="#">Due monday</a></div>
+                                        </div>
+                                        <div class="week-summary">
+                                           <div class="week-summary-in">
+                                              <div class="summary-wrap">
+                                                 <input type="checkbox" checked="checked">
+                                                 <label>Submit proposals for new clients</label>
+                                              </div>
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                           </div>
+                                           <div class="due-date"><a href="#">Due monday</a></div>
+                                        </div>
+                                        <div class="week-summary">
+                                           <div class="week-summary-in">
+                                              <div class="summary-wrap">
+                                                 <input type="checkbox" checked="checked">
+                                                 <label>Review revenue numbers for March</label>
+                                              </div>
+                                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis lobortis tempor.</p>
+                                           </div>
+                                           <div class="due-date"><a href="#">Due monday</a></div>
+                                        </div>
+                                     </div>
+                                  </div>
+                               </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="javascript:void(0)">New Report</a>
+                    </li>
+                    <li>
+                        <a href="#add-client-model" data-fancybox>Add client</a>
+                        <div style="display: none;" id="add-client-model" class="add-client-model">
+                            <div class="add-client-form">
+                                <h1>Invite new client</h1>
+                                <form>
+                                    <ul>
+                                        <li>
+                                            <label for="uname"><b>Name</b></label>
+                                            <input type="text" placeholder="Enter name" name="uname" required>
+                                        </li>
+                                        <li>
+                                            <label for="uname"><b>Email</b></label>
+                                            <input type="text" placeholder="Enter email" name="uname" required>
+                                        </li>
+                                        <li class="width-100">
+                                            <label>Required documentation</label>
+                                            <div class="switch-documentation">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <div>Passport</div>
+                                            </div>
+                                            <div class="switch-documentation">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <div>Credit Card</div>
+                                            </div>
+                                            <div class="switch-documentation">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <div>Medical</div>
+                                            </div>
+                                        </li>
+                                        <li class="width-100 documents-signed">
+                                            <label>Documents to be signed</label>
+                                            <div class="switch-documentation">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <div>SmartFlyer Agreement</div>
+                                            </div>
+                                            <div class="switch-documentation">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <div>Personal Liability</div>
+                                            </div>
+                                            <div class="switch-documentation">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <div>Terms of Service</div>
+                                            </div>
+                                            <div class="switch-documentation">
+                                                <label class="switch">
+                                                    <input type="checkbox" checked>
+                                                    <span class="slider round"></span>
+                                                </label>
+                                                <div>Privacy agreement</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="form-btn">
+                                         <input type="submit" value="Cancel">
+                                         <input type="submit" value="Invite">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="dashboard-left all-clients-card">
+                <div class="dashboard-chart d-flex flex-wrap margin-15">
+                    <div class="dashboard-chart-wrap col-4">
+                        <div class="inner box-hover">
+                            <figure>
+                                <img src="images/Revenue.png">
+                            </figure>
+                            <h6>10 Clients</h6>
+                            <div class="chart-details d-flex flex-wrap align-items-center justify-content-flex-start">
+                                <h2>$5,209</h2>
+                                <div class="chart-percentage">
+                                    <h5>27% <img src="images/chart-up.png"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-chart-wrap col-4">
+                        <div class="inner box-hover">
+                            <figure>
+                                <img src="images/Clients-icon.png">
+                            </figure>
+                            <h6>Clients</h6>
+                            <div class="chart-details d-flex flex-wrap align-items-center justify-content-flex-start">
+                                <h2>2,044</h2>
+                                <div class="chart-percentage">
+                                    <h5>27% <img src="images/chart-up.png"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-chart-wrap col-4">
+                        <div class="inner box-hover">
+                            <img src="images/Equalizer.png">
+                            <h6>Milestone Reached</h6>
+                            <div class="chart-details d-flex flex-wrap align-items-center justify-content-flex-start">
+                                <h2>$50,000</h2>
+                                <div class="chart-percentage down-graph">
+                                    <h5>14% <img src="images/chart-down.png"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-chart-wrap col-4">
+                        <div class="inner box-hover">
+                            <img src="images/Group-chat.png">
+                            <h6>Bookings    </h6>
+                            <div class="chart-details d-flex flex-wrap align-items-center justify-content-space-between">
+                                <h2>23,508</h2>
+                                <div class="chart-percentage">
+                                    <h5>27% <img src="images/chart-up.png"></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clients-tab-section">
+                <div class="clients-tab d-flex flex-wrap justify-content-space-between">
+                    <ul class="tabs d-flex flex-wrap">
+                        <li class="active" rel="tab1"><span>All</span></li>
+                        <li rel="tab2"><span>Recent</span></li>
+                        <li rel="tab3"><span>Most active</span></li>
+                    </ul>
+                    <div class="search-filetr d-flex flex-wrap">
+                        <i class="bi bi-funnel"></i>
+                        <div class="trip-view-search">
+                            <a data-fancybox data-src="#search-popup">
+                                <div class="search">
+                                    <img src="images/search.png">
+                                </div>
+                            </a>
+                            <div style="display: none;" id="search-popup">
+                                <h1>Search</h1>
+                                <input type="search" id="gsearch" name="gsearch" placeholder="Search for bookings, clients and suppliers.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_container">
+                    <div id="tab1" class="tab_content">
+                        <div class="trip-details d-flex flex-wrap">
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-1.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Sarah Stevens</a></h3>  
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-1.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Sarah Stevens</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-2.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Martin Doe</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                             <div class="upcoming-trips-tab">
+                                                 <div class="upcoming-content"> Upcoming <strong>Europe 2022</strong></div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                     <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-2.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Martin Doe</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-6.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Maddy Jones</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                             <div class="upcoming-trips-tab">
+                                                 <div class="upcoming-content"> Upcoming <strong>Europe 2022</strong></div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                     <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-6.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Maddy Jones</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-5.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Mark Limm</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            <div class="upcoming-trips-tab">
+                                                <div class="upcoming-content"> Upcoming <strong>Europe 2022</strong></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-5.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Mark Limm</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab_content">
+                        <div class="trip-details d-flex flex-wrap">
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-1.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Sarah Stevens</</h3>  
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-1.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Sarah Stevens</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-2.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Martin Doe</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                             <div class="upcoming-trips-tab">
+                                                 <div class="upcoming-content"> Upcoming <strong>Europe 2022</strong></div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                     <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-2.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Martin Doe</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-6.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+                                        	<h3><a href="client-detail-view.html">Maddy Jones</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                             <div class="upcoming-trips-tab">
+                                                 <div class="upcoming-content"> Upcoming <strong>Europe 2022</strong></div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                     <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-6.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Maddy Jones</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-5.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Mark Limm</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            <div class="upcoming-trips-tab">
+                                                <div class="upcoming-content"> Upcoming <strong>Europe 2022</strong></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-5.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Mark Limm</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab_content">
+                        <div class="trip-details d-flex flex-wrap">
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-1.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Sarah Stevens</</h3>  
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-1.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Sarah Stevens</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-2.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Martin Doe</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                             <div class="upcoming-trips-tab">
+                                                 <div class="upcoming-content"> Upcoming <strong>Europe 2022</strong></div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                     <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-2.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Martin Doe</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-6.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Maddy Jones</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                             <div class="upcoming-trips-tab">
+                                                 <div class="upcoming-content"> Upcoming <strong>Europe 2022</strong></div>
+                                             </div>
+                                        </div>
+                                    </div>
+                                     <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-6.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Maddy Jones</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-5.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Mark Limm</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            <div class="upcoming-trips-tab">
+                                                <div class="upcoming-content"> Upcoming <strong>Europe 2022</strong></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                     <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="trip-details-wrap d-flex flex-wrap col-6">
+                                <div class="image">
+                                    <a href="client-detail-view.html">
+                                        <img src="images/clients-5.png">
+                                    </a>
+                                </div>
+                                <div class="trip-details-content">
+                                    <div class="trip-details-content-inner d-flex flex-wrap">
+                                        <div class="tab-content-title">
+	                                       <h3><a href="client-detail-view.html">Mark Limm</a></h3>
+                                            <a href="mailto:martindoe@gmail.com" class="black email">martindoe@gmail.com</a>
+                                        </div>
+                                        <div class="upcoming-trips-tab">
+                                            No upcoming trips
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+1 (212) 855 1234" class="black ">+1 (212) 855 1234</a></li>
+                                        <li class="black "><i class="fa fa-map-marker" aria-hidden="true"></i> 31w 31st Street, New York, NY, 10018</li>
+                                        <li class="share-icon"><a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/dashboard-script.js"></script>
+
+</body>
+</html>

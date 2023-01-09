@@ -1,0 +1,74 @@
+.dashboard-left-menu {
+    display: inline-block;
+    width: 265px;
+    background-color: #224188;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+ul.mainmenu {
+    text-align: left;
+    width: 100%;
+    background: #224188;
+    z-index: 9;
+}
+
+.trip-view-header ul li a {
+    background: #14347d;
+    border: 1px solid #14347d;
+}
+
+.trip-view-header ul li a:hover {
+    background-color: transparent;
+    color: #14347d;
+}
+
+.dashboard-header h1 {
+    color: #224188;
+}
+
+.dashboard-time ul li {
+    color: #224188;
+}
+
+.add-client-form .form-btn input[type="submit"],
+.fancybox-close-button {
+    background-color: #14347d;
+    color: #fff;
+    border-right: 1px solid rgb(0 0 0 / 20%);
+}
+.add-client-form .form-btn input[type="submit"]:hover,
+.fancybox-close-button:hover {
+    border-color: rgb(0 0 0 / 20%);
+    background-color: transparent;
+    color: #585858;
+}
+.cancel-btn {
+    border-color: rgb(0 0 0 / 20%) !important;
+    background-color: transparent !important;
+    color: #585858 !important;
+}
+.cancel-btn:hover {
+    background-color: #14347d !important;
+    color: #fff !important;
+    border-right: 1px solid rgb(0 0 0 / 20%) !important;
+}
+.switch-documentation input:checked + .slider {
+    background-color: #224188;
+}
+.switch-documentation input:focus + .slider {
+    box-shadow: 0 0 1px #224188;
+}
+
+.detail-page-btn {
+    background: #EB5757 !important;
+    border: 1px solid #EB5757 !important;
+    text-transform: uppercase !important;
+}
+
+.detail-page-btn:hover {
+    background: #EB5757 !important;
+    background-color: transparent !important;
+    color: #EB5757 !important;
+}
